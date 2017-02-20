@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\设计文件\能耗系统\设计\软件部分\uCOS-II HXN3协议装换装置\uCOS-II\uCOS-II-hxn3pro.uvproj
+Project File Date:  05/27/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling DipComOperate.c...
+..\DipSoftware\MastConTask\DipComOperate.c(387): warning:  #550-D: variable "addflg" was set but never used
+        static  char    addflg = 0;
+..\DipSoftware\MastConTask\DipComOperate.c: 1 warning, 0 errors
+compiling hdlc.c...
+..\DipSoftware\SlaveConTask\hdlc.c(246): warning:  #550-D: variable "addr" was set but never used
+                uint8           addr;
+..\DipSoftware\SlaveConTask\hdlc.c(250): warning:  #177-D: variable "i" was declared but never referenced
+                uint8           i;
+..\DipSoftware\SlaveConTask\hdlc.c(358): warning:  #111-D: statement is unreachable
+                                                break;
+..\DipSoftware\SlaveConTask\hdlc.c(329): warning:  #177-D: variable "movecodebit" was declared but never referenced
+        uint8           movesendbit = 1,moverecbit = 5,moveflgbit = 4,movecodebit=2;    
+..\DipSoftware\SlaveConTask\hdlc.c(335): warning:  #550-D: variable "recsframtime" was set but never used
+        static  uint32  recsframtime;
+..\DipSoftware\SlaveConTask\hdlc.c(411): warning:  #177-D: variable "flg" was declared but never referenced
+        uint8                   flg;
+..\DipSoftware\SlaveConTask\hdlc.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=77226 RO-data=3642 RW-data=2576 ZI-data=25368  
+FromELF: creating hex file...
+".\Project\Output\uCOS-II-test.axf" - 0 Error(s), 7 Warning(s).
+Load "F:\\设计文件\\能耗系统\\设计\\软件部分\\uCOS-II HXN3协议装换装置\\uCOS-II\\Project\\Output\\uCOS-II-test.axf" 
+Set JLink Project File to "F:\设计文件\能耗系统\设计\软件部分\uCOS-II HXN3协议装换装置\uCOS-II\JLinkSettings.ini"
+* JLink Info: Device "LPC1766" selected (256 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.90 , compiled Jul 28 2014 10:35:20
+Firmware: J-Link V9 compiled Oct 28 2014 19:25:34
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: LPC1766
+VTarget = 3.312V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>

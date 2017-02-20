@@ -1,0 +1,21 @@
+#ifndef  _TMP_
+#define  _TMP_
+
+
+void DelayX10ms(uint32 x)
+{
+}
+
+uint32   GetSysTime( void )
+{
+	uint32	t;
+	return	t;
+}
+
+uint8 SendCOM1(void *buf,uint32 len)
+{
+	return	1;
+	
+}
+
+#endif
