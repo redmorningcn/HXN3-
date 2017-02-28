@@ -427,10 +427,12 @@ ARM Macro Assembler    Page 7
               00000000 
               00000200 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\projec
-t\output\startup_lpc17xx.d -o.\project\output\startup_lpc17xx.o -IC:\Keil\ARM\R
-V31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --list=.\proj
-ect\list\startup_lpc17xx.lst BSP\startup_LPC17xx.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\project\output\startup_lpc17xx.d -o.\project\output\startup_lpc1
+7xx.o -I.\RTE\_Target_1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC
+:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include --predefine="__UVISION
+_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="LPC175x_6x SETA 1" -
+-list=.\project\list\startup_lpc17xx.lst BSP\startup_LPC17xx.s
 
 
 
@@ -1097,4 +1099,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 5 symbols
-402 symbols in table
+405 symbols in table

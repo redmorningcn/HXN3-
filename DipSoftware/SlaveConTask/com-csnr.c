@@ -78,10 +78,22 @@ void  CSNR_RecDealHostDip(void)     									//主机
 //				dip = DataBuf[3]+ DataBuf[2]*256;	
 //			}
 //			
-			if((GetRecAddr() == 0xc1) || (GetRecAddr() == 0xc2))
+
+			//////////////////////////////////////////
+//			20170220 修改机车微机显示屏出现跳变现象   /////////////	
+//			if((GetRecAddr() == 0xc1) || (GetRecAddr() == 0xc2))
+//			{
+//				memcpy((uint8 *)&dip,&DataBuf[2],sizeof(dip));
+//			}
+			
+			if((GetRecAddr() != 0xc1) && (GetRecAddr() != 0xc2))
 			{
-				memcpy((uint8 *)&dip,&DataBuf[2],sizeof(dip));
-			}
+				return;
+			}			
+/////////////////////////////////////////20170220
+			
+			
+			memcpy((uint8 *)&dip,&DataBuf[2],sizeof(dip));
 			
 			printfcom0("\r\n油量：%d",dip);
 	
@@ -111,3 +123,4 @@ void  CSNR_RecDealHostDip(void)     									//主机
 		 }
 	}
 }
+
